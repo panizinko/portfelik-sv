@@ -11,6 +11,9 @@ dependencies:
   '@tailwindcss/vite':
     specifier: ^4.1.1
     version: 4.1.1(vite@6.2.4)
+  '@tanstack/svelte-query':
+    specifier: ^5.71.5
+    version: 5.71.5(svelte@5.25.6)
   convex:
     specifier: ^1.22.0
     version: 1.22.0
@@ -46,6 +49,9 @@ devDependencies:
   '@testing-library/svelte':
     specifier: ^5.2.4
     version: 5.2.7(svelte@5.25.6)(vite@6.2.4)(vitest@3.1.1)
+  daisyui:
+    specifier: ^5.0.12
+    version: 5.0.12
   eslint:
     specifier: ^9.18.0
     version: 9.23.0
@@ -1047,6 +1053,19 @@ packages:
       vite: 6.2.4
     dev: false
 
+  /@tanstack/query-core@5.71.5:
+    resolution: {integrity: sha512-XOQ5SyjCdwhxyLksGKWSL5poqyEXYPDnsrZAzJm2LgrMm4Yh6VOrfC+IFosXreDw9HNqC11YAMY3HlfHjNzuaA==}
+    dev: false
+
+  /@tanstack/svelte-query@5.71.5(svelte@5.25.6):
+    resolution: {integrity: sha512-fdEh5O3+HBketifQ0VPCEbnNbyPOsIsDfVId4c5FsOqr5YyJ2HPTug6MPMfK/hU6BWIk8oCv3RQvkYt/Mi/OPw==}
+    peerDependencies:
+      svelte: ^3.54.0 || ^4.0.0 || ^5.0.0
+    dependencies:
+      '@tanstack/query-core': 5.71.5
+      svelte: 5.25.6
+    dev: false
+
   /@testing-library/dom@10.4.0:
     resolution: {integrity: sha512-pemlzrSESWbdAloYml3bAJMEfNh1Z7EduzqPKprCH5S341frlpYnUEW0H72dLxa6IsYr+mPno20GiSm+h9dEdQ==}
     engines: {node: '>=18'}
@@ -1527,6 +1546,10 @@ packages:
     dependencies:
       '@asamuzakjp/css-color': 3.1.1
       rrweb-cssom: 0.8.0
+    dev: true
+
+  /daisyui@5.0.12:
+    resolution: {integrity: sha512-01DU0eYBcHgPtuf5fxcrkGkIN6/Uyaqmkle5Yo3ZyW9YVAu036ALZbjv2KH5euvUbeQ4r9q3gAarGcf7Tywhng==}
     dev: true
 
   /data-urls@5.0.0:
